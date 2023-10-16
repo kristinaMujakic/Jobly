@@ -2,7 +2,7 @@
 
 const jwt = require("jsonwebtoken");
 const { UnauthorizedError } = require("../expressError");
-const { authenticateJWT, ensureLoggedIn, ensureAdmin, ensureCorrectUserOrAdmin } = require("./auth");
+const { authenticateJWT, ensureLoggedIn } = require("./auth");
 
 
 const { SECRET_KEY } = require("../config");
